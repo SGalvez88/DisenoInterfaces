@@ -87,8 +87,8 @@ public class Saludar extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextNameActionPerformed
 
     private void jButtonSaludarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSaludarActionPerformed
-       String nombre = jTextName.getText();
-       JOptionPane.showMessageDialog(null, "Hola "+ nombre);
+       
+       JOptionPane.showMessageDialog(this, "Hola "+ jTextName.getText());
     }//GEN-LAST:event_jButtonSaludarActionPerformed
 
     /**
