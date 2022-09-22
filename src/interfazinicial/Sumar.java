@@ -156,7 +156,9 @@ public class Sumar extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextFieldResultadoActionPerformed
 
     private void jButtonCleanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCleanActionPerformed
-        // TODO add your handling code here:
+        jTextFieldNumero1.setText("");
+        jTextFieldNumero2.setText("");
+        jTextFieldResultado.setText("");
     }//GEN-LAST:event_jButtonCleanActionPerformed
 
     private void jButtonAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAddActionPerformed
