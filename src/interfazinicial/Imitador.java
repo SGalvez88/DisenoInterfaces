@@ -16,11 +16,19 @@ public class Imitador extends javax.swing.JFrame {
      */
     public Imitador() {
         initComponents();
-        buttonGroup.add(jRadioButtonOpcion1Original);
-        buttonGroup.add(jRadioButtonOpcion2Original);
-        buttonGroup.add(jRadioButtonOpcion3Original);
+        agruparBotones();
+        
     }
-
+    
+    public void agruparBotones()
+    {
+        buttonGroup.add(this.jRadioButtonOpcion1Original);
+        buttonGroup.add(this.jRadioButtonOpcion2Original);
+        buttonGroup.add(this.jRadioButtonOpcion3Original);
+        buttonGroup2.add(this.jRadioButtonOpcion1Espejo);
+        buttonGroup2.add(this.jRadioButtonOpcion2Espejo);
+        buttonGroup2.add(this.jRadioButtonOpcion3Espejo);
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -31,6 +39,7 @@ public class Imitador extends javax.swing.JFrame {
     private void initComponents() {
 
         buttonGroup = new javax.swing.ButtonGroup();
+        buttonGroup2 = new javax.swing.ButtonGroup();
         jRadioButtonOpcion3Original = new javax.swing.JRadioButton();
         jLabelTitleOriginal = new javax.swing.JLabel();
         jRadioButtonOpcion1Original = new javax.swing.JRadioButton();
@@ -56,17 +65,32 @@ public class Imitador extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jRadioButtonOpcion3Original.setText("Opción 3");
+        jRadioButtonOpcion3Original.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButtonOpcion3OriginalActionPerformed(evt);
+            }
+        });
 
         jLabelTitleOriginal.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         jLabelTitleOriginal.setText("Espejo");
 
         jRadioButtonOpcion1Original.setText("Opción 1");
+        jRadioButtonOpcion1Original.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButtonOpcion1OriginalActionPerformed(evt);
+            }
+        });
 
         jRadioButtonOpcion2Original.setText("Opción 2");
+        jRadioButtonOpcion2Original.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButtonOpcion2OriginalActionPerformed(evt);
+            }
+        });
 
-        jCheckBox1.setText("jCheckBox1");
+        jCheckBox1.setText("Opción 4");
 
-        jCheckBox2.setText("jCheckBox1");
+        jCheckBox2.setText(" Opción 5");
 
         jCheckBox3.setText("jCheckBox1");
         jCheckBox3.setEnabled(false);
@@ -83,7 +107,7 @@ public class Imitador extends javax.swing.JFrame {
         jRadioButtonOpcion2Espejo.setText("Opción 1");
         jRadioButtonOpcion2Espejo.setEnabled(false);
 
-        jCheckBox4.setText("jCheckBox3");
+        jCheckBox4.setText("Opción 6");
 
         jCheckBox5.setText("jCheckBox1");
         jCheckBox5.setEnabled(false);
@@ -211,6 +235,18 @@ public class Imitador extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jRadioButtonOpcion1OriginalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonOpcion1OriginalActionPerformed
+        this.jRadioButtonOpcion1Espejo.setSelected(this.jRadioButtonOpcion1Original.isSelected());
+    }//GEN-LAST:event_jRadioButtonOpcion1OriginalActionPerformed
+
+    private void jRadioButtonOpcion2OriginalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonOpcion2OriginalActionPerformed
+        this.jRadioButtonOpcion2Espejo.setSelected(this.jRadioButtonOpcion2Original.isSelected());
+    }//GEN-LAST:event_jRadioButtonOpcion2OriginalActionPerformed
+
+    private void jRadioButtonOpcion3OriginalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonOpcion3OriginalActionPerformed
+       this.jRadioButtonOpcion3Espejo.setSelected(this.jRadioButtonOpcion3Original.isSelected());
+    }//GEN-LAST:event_jRadioButtonOpcion3OriginalActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -248,6 +284,7 @@ public class Imitador extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroup;
+    private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JCheckBox jCheckBox2;
     private javax.swing.JCheckBox jCheckBox3;
