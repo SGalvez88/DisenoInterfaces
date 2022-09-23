@@ -44,17 +44,17 @@ public class Imitador extends javax.swing.JFrame {
         jLabelTitleOriginal = new javax.swing.JLabel();
         jRadioButtonOpcion1Original = new javax.swing.JRadioButton();
         jRadioButtonOpcion2Original = new javax.swing.JRadioButton();
-        jCheckBox1 = new javax.swing.JCheckBox();
-        jCheckBox2 = new javax.swing.JCheckBox();
-        jCheckBox3 = new javax.swing.JCheckBox();
+        jCheckBoxOriginal1 = new javax.swing.JCheckBox();
+        jCheckBoxOriginal2 = new javax.swing.JCheckBox();
+        jCheckBox1espejo = new javax.swing.JCheckBox();
         jSeparator1 = new javax.swing.JSeparator();
         jLabelTitleOriginal1 = new javax.swing.JLabel();
         jRadioButtonOpcion3Espejo = new javax.swing.JRadioButton();
         jRadioButtonOpcion1Espejo = new javax.swing.JRadioButton();
         jRadioButtonOpcion2Espejo = new javax.swing.JRadioButton();
-        jCheckBox4 = new javax.swing.JCheckBox();
-        jCheckBox5 = new javax.swing.JCheckBox();
-        jCheckBox6 = new javax.swing.JCheckBox();
+        jCheckBoxOriginal3 = new javax.swing.JCheckBox();
+        jCheckBox2espejo = new javax.swing.JCheckBox();
+        jCheckBox3espejo = new javax.swing.JCheckBox();
         jTextField1 = new javax.swing.JTextField();
         jTextField4 = new javax.swing.JTextField();
         jSpinner1 = new javax.swing.JSpinner();
@@ -88,12 +88,22 @@ public class Imitador extends javax.swing.JFrame {
             }
         });
 
-        jCheckBox1.setText("Opción 4");
+        jCheckBoxOriginal1.setText("Opción 4");
+        jCheckBoxOriginal1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBoxOriginal1ActionPerformed(evt);
+            }
+        });
 
-        jCheckBox2.setText(" Opción 5");
+        jCheckBoxOriginal2.setText(" Opción 5");
+        jCheckBoxOriginal2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBoxOriginal2ActionPerformed(evt);
+            }
+        });
 
-        jCheckBox3.setText("jCheckBox1");
-        jCheckBox3.setEnabled(false);
+        jCheckBox1espejo.setText("Opcion 4");
+        jCheckBox1espejo.setEnabled(false);
 
         jLabelTitleOriginal1.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         jLabelTitleOriginal1.setText("Original");
@@ -107,13 +117,18 @@ public class Imitador extends javax.swing.JFrame {
         jRadioButtonOpcion2Espejo.setText("Opción 1");
         jRadioButtonOpcion2Espejo.setEnabled(false);
 
-        jCheckBox4.setText("Opción 6");
+        jCheckBoxOriginal3.setText("Opción 6");
+        jCheckBoxOriginal3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBoxOriginal3ActionPerformed(evt);
+            }
+        });
 
-        jCheckBox5.setText("jCheckBox1");
-        jCheckBox5.setEnabled(false);
+        jCheckBox2espejo.setText("Opcion 5");
+        jCheckBox2espejo.setEnabled(false);
 
-        jCheckBox6.setText("jCheckBox1");
-        jCheckBox6.setEnabled(false);
+        jCheckBox3espejo.setText("opcion 6");
+        jCheckBox3espejo.setEnabled(false);
 
         jTextField4.setEnabled(false);
 
@@ -136,9 +151,9 @@ public class Imitador extends javax.swing.JFrame {
                                     .addComponent(jRadioButtonOpcion3Original))
                                 .addGap(78, 78, 78)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jCheckBox1)
-                                    .addComponent(jCheckBox2)
-                                    .addComponent(jCheckBox4))
+                                    .addComponent(jCheckBoxOriginal1)
+                                    .addComponent(jCheckBoxOriginal2)
+                                    .addComponent(jCheckBoxOriginal3))
                                 .addGap(63, 63, 63)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -155,9 +170,9 @@ public class Imitador extends javax.swing.JFrame {
                                             .addComponent(jRadioButtonOpcion3Espejo))
                                         .addGap(71, 71, 71)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jCheckBox6)
-                                            .addComponent(jCheckBox5)
-                                            .addComponent(jCheckBox3))
+                                            .addComponent(jCheckBox3espejo)
+                                            .addComponent(jCheckBox2espejo)
+                                            .addComponent(jCheckBox1espejo))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -184,17 +199,17 @@ public class Imitador extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(88, 88, 88)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jCheckBox1)
+                    .addComponent(jCheckBoxOriginal1)
                     .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jRadioButtonOpcion2Original)
-                    .addComponent(jCheckBox2)
+                    .addComponent(jCheckBoxOriginal2)
                     .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jRadioButtonOpcion3Original)
-                    .addComponent(jCheckBox4)
+                    .addComponent(jCheckBoxOriginal3)
                     .addComponent(jSpinner2, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(31, 31, 31)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -205,16 +220,16 @@ public class Imitador extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jRadioButtonOpcion1Espejo)
-                            .addComponent(jCheckBox3))
+                            .addComponent(jCheckBox1espejo))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 13, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jRadioButtonOpcion2Espejo)
-                            .addComponent(jCheckBox5)
+                            .addComponent(jCheckBox2espejo)
                             .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jRadioButtonOpcion3Espejo)
-                            .addComponent(jCheckBox6)
+                            .addComponent(jCheckBox3espejo)
                             .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(35, 35, 35))
                     .addGroup(layout.createSequentialGroup()
@@ -246,6 +261,18 @@ public class Imitador extends javax.swing.JFrame {
     private void jRadioButtonOpcion3OriginalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonOpcion3OriginalActionPerformed
        this.jRadioButtonOpcion3Espejo.setSelected(this.jRadioButtonOpcion3Original.isSelected());
     }//GEN-LAST:event_jRadioButtonOpcion3OriginalActionPerformed
+
+    private void jCheckBoxOriginal1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBoxOriginal1ActionPerformed
+        this.jCheckBox1espejo.setSelected(this.jCheckBoxOriginal1.isSelected());
+    }//GEN-LAST:event_jCheckBoxOriginal1ActionPerformed
+
+    private void jCheckBoxOriginal2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBoxOriginal2ActionPerformed
+        this.jCheckBox2espejo.setSelected(this.jCheckBoxOriginal2.isSelected());
+    }//GEN-LAST:event_jCheckBoxOriginal2ActionPerformed
+
+    private void jCheckBoxOriginal3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBoxOriginal3ActionPerformed
+        this.jCheckBox3espejo.setSelected(this.jCheckBoxOriginal3.isSelected());
+    }//GEN-LAST:event_jCheckBoxOriginal3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -285,12 +312,12 @@ public class Imitador extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroup;
     private javax.swing.ButtonGroup buttonGroup2;
-    private javax.swing.JCheckBox jCheckBox1;
-    private javax.swing.JCheckBox jCheckBox2;
-    private javax.swing.JCheckBox jCheckBox3;
-    private javax.swing.JCheckBox jCheckBox4;
-    private javax.swing.JCheckBox jCheckBox5;
-    private javax.swing.JCheckBox jCheckBox6;
+    private javax.swing.JCheckBox jCheckBox1espejo;
+    private javax.swing.JCheckBox jCheckBox2espejo;
+    private javax.swing.JCheckBox jCheckBox3espejo;
+    private javax.swing.JCheckBox jCheckBoxOriginal1;
+    private javax.swing.JCheckBox jCheckBoxOriginal2;
+    private javax.swing.JCheckBox jCheckBoxOriginal3;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabelTitleOriginal;

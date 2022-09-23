@@ -41,9 +41,9 @@
                               </Group>
                               <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jCheckBox1" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jCheckBox2" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jCheckBox4" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCheckBoxOriginal1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCheckBoxOriginal2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCheckBoxOriginal3" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
@@ -64,9 +64,9 @@
                                       </Group>
                                       <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jCheckBox6" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jCheckBox5" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jCheckBox3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jCheckBox3espejo" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jCheckBox2espejo" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jCheckBox1espejo" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace max="32767" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
@@ -108,19 +108,19 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="88" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jCheckBox1" min="-2" max="-2" attributes="0"/>
+                  <Component id="jCheckBoxOriginal1" min="-2" max="-2" attributes="0"/>
                   <Component id="jTextField1" min="-2" pref="24" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jRadioButtonOpcion2Original" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jCheckBox2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jCheckBoxOriginal2" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jComboBox2" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jRadioButtonOpcion3Original" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jCheckBox4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jCheckBoxOriginal3" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jSpinner2" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
@@ -132,18 +132,18 @@
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jRadioButtonOpcion1Espejo" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jCheckBox3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jCheckBox1espejo" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="13" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jRadioButtonOpcion2Espejo" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jCheckBox5" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jCheckBox2espejo" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jComboBox1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jRadioButtonOpcion3Espejo" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jCheckBox6" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jCheckBox3espejo" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jSpinner1" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
@@ -204,19 +204,25 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButtonOpcion2OriginalActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JCheckBox" name="jCheckBox1">
+    <Component class="javax.swing.JCheckBox" name="jCheckBoxOriginal1">
       <Properties>
         <Property name="text" type="java.lang.String" value="Opci&#xf3;n 4"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBoxOriginal1ActionPerformed"/>
+      </Events>
     </Component>
-    <Component class="javax.swing.JCheckBox" name="jCheckBox2">
+    <Component class="javax.swing.JCheckBox" name="jCheckBoxOriginal2">
       <Properties>
         <Property name="text" type="java.lang.String" value=" Opci&#xf3;n 5"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBoxOriginal2ActionPerformed"/>
+      </Events>
     </Component>
-    <Component class="javax.swing.JCheckBox" name="jCheckBox3">
+    <Component class="javax.swing.JCheckBox" name="jCheckBox1espejo">
       <Properties>
-        <Property name="text" type="java.lang.String" value="jCheckBox1"/>
+        <Property name="text" type="java.lang.String" value="Opcion 4"/>
         <Property name="enabled" type="boolean" value="false"/>
       </Properties>
     </Component>
@@ -248,20 +254,23 @@
         <Property name="enabled" type="boolean" value="false"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JCheckBox" name="jCheckBox4">
+    <Component class="javax.swing.JCheckBox" name="jCheckBoxOriginal3">
       <Properties>
         <Property name="text" type="java.lang.String" value="Opci&#xf3;n 6"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBoxOriginal3ActionPerformed"/>
+      </Events>
     </Component>
-    <Component class="javax.swing.JCheckBox" name="jCheckBox5">
+    <Component class="javax.swing.JCheckBox" name="jCheckBox2espejo">
       <Properties>
-        <Property name="text" type="java.lang.String" value="jCheckBox1"/>
+        <Property name="text" type="java.lang.String" value="Opcion 5"/>
         <Property name="enabled" type="boolean" value="false"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JCheckBox" name="jCheckBox6">
+    <Component class="javax.swing.JCheckBox" name="jCheckBox3espejo">
       <Properties>
-        <Property name="text" type="java.lang.String" value="jCheckBox1"/>
+        <Property name="text" type="java.lang.String" value="opcion 6"/>
         <Property name="enabled" type="boolean" value="false"/>
       </Properties>
     </Component>
